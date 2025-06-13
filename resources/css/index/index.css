@@ -1,0 +1,11 @@
+@import url('../_variables.css');
+section.banner
+{
+  background: linear-gradient(45deg,rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('./images/victor-dasilva-WWw24_wucws-unsplash.jpg');
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+  min-height: 416.95px;
+  height: auto;
+}
