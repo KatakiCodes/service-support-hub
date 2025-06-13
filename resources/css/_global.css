@@ -1,0 +1,28 @@
+@import url('./_variables.css');
+*{
+    font-family: 'inter';
+}
+
+.btn-primary{
+    background-color: var(--soft-purple);
+    border-color: var(--soft-purple);
+    transition: all ease-in-out 0.5s;
+}
+.bg_info{
+    background-color: rgb(236, 222, 248);
+    border: none;
+    color: var(--soft-purple);
+}
+.text-hightlight{
+    background-color: whitesmoke;
+    color: black;
+}
+.btn-primary:hover{
+    background-color: var(--hover-soft-purple);
+    border-color: var(--hover-soft-purple);
+}
+img.logo{
+    border-radius: 100%;
+    width: 50px;
+    min-height: 50px;
+}
