@@ -26,3 +26,6 @@ img.logo{
     width: 50px;
     min-height: 50px;
 }
+.text_primary{
+    color: var(--soft-purple);
+}
