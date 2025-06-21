@@ -1,13 +1,12 @@
 @import url('../_variables.css');
-section.banner
+div.banner
 {
   background: linear-gradient(45deg,rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),
               url('./images/victor-dasilva-WWw24_wucws-unsplash.jpg');
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 416.95px;
-  height: auto;
 }
 .shadown-bright
 {
@@ -19,4 +18,20 @@ section.banner
   background-color: rgb(245, 235, 248);
   border-bottom: 5px solid var(--soft-purple);
   border-top: 5px solid var(--soft-purple);
+}
+.economic{
+  background-color: rgb(241, 241, 241);
+}
+.full-height{
+  min-height: 100dvh;
+}
+.register-comapany-section{
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),
+              url('./images/2150690165.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer{
+  background: linear-gradient(45deg, rgb(25, 25, 26),rgb(1, 33, 51));
 }

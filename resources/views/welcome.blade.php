@@ -28,7 +28,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="ms-auto navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#register-company">Registar compania</a>
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#register-company">Compania</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#register">Registar-se</a>
@@ -42,13 +45,13 @@
             </div>
         </nav>
     </header>
-    <div class="py-2"></div>
+    <div class="py-2" id="home"></div>
     <main class="bg-white mt-5">
-        <section class="banner py-5 text-light">
-            <div class="container h-100">
+        <div class="banner py-5 text-light">
+            <div class="container">
                 <div class="row flex-column-reverse flex-md-row">
                     <div class="col-md-6 d-flex align-items-center text-center text-md-start">
-                        <section>
+                        <div>
                             <h1 class="display-1">Bem-vindo a Central de suporte unificada</h1>
 
                             <p class="lead my-4">
@@ -56,18 +59,17 @@
                                 da sua mão, ou preste suporte por meio de uma Central
                                 de suporte unificada apartir de qualquel lugar!
                             </p>
-                            <a href="#" class="btn btn-primary w-25">Entrar</a>
+                            <a href="#" class="btn btn-primary w-50">Entrar</a>
 
-                        </section>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <section class="py-5">
-            <h2 class="lead fs-2 text-center pt-2 pb-5 text_primary">Preste suporte de forma precisa</h2>
+        </div>
+        <div class="py-5">
             <div class="container">
-                <div class="row mx-auto gap-5 justify-content-center">
+            <h2 class="lead fs-2 text-center pt-2 text_primary">Preste suporte de forma precisa</h2>
+                <div class="row mx-auto gap-5 justify-content-center mt-5">
                     <div class="col-md-3
                      text-start shadown-bright p-2">
                         <div class="card-fill"></div>
@@ -87,79 +89,131 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <div id="register-company"></div>
-        <section class="bg-dark text-light">
-            <div class="container-fluid mt-5">
-                <div class="row">
-                <div class="col-6 d-none d-md-flex">
-                    <img src="{{ @asset('./images/2149145057.jpg') }}" class="img-fluid" alt="" srcset="">
-                </div>
-                    <div class="col-md-6 py-4">
+        </div>
+        <div class="py-5" id="register-company"></div>
+        <section class="py-5 text-light register-comapany-section">
+            <div class="container">
+                <div class="row h-100">
+                    <div class="col-md-6 pt-5 -auto">
                         <article>
-                            <h2 class="fs-2 lead">Oriente seus Clientes com Facilidade</h2>
+                            <h2 class="display-4 lead">Oriente seus Clientes com Facilidade</h2>
                             <hr>
                             <p class="lead">
                                 Dúvidas são inevitáveis, mas a confusão não precisa ser. Com nossa central interativa, sua empresa pode guiar os consumidores com conteúdos organizados, respostas rápidas e suporte acessível.
                                 Crie, tutoriais, canais de feedback e mais — tudo em um só lugar.
-                                O cliente procura, encontra e resolve. Simples assim. 
+                                O cliente procura, encontra e resolve. Simples assim.
+                                Personaliza o perfil da sua compania da melhor e torne o suporte dos seus serviços mais acessíveis
                             </p>
-                            <a href="#" class="btn btn-primary">Registar compania</a>
+                            <a href="#" class="btn btn-outline-white w-50">Registar compania</a>
                         </article>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container">
-            <h2 class="fs-2 lead text_primary text-center py-5 mt-3">Economize +</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <article>
-                        <h3 class="fs-3 lead">Economize Tempo</h3>
-                        <p>
-                            Ao unificar os canais de suporte, sua empresa reduz o tempo gasto com atendimentos repetitivos, busca de informações e resolução de dúvidas comuns.
-                            Com um ambiente centralizado e padronizado, os clientes encontram respostas com mais rapidez e a equipe de suporte atua de forma mais estratégica, focando no que realmente importa.
-                            O resultado é uma operação mais ágil, produtiva e com menos interrupções — economizando horas valiosas todos os dias.
-                        </p>
-                    </article>
-                    <hr>
-                    <article class="mt-4">
-                        <h3 class="fs-3 lead">Economize Recursos</h3>
-                        <p>
-                            Desenvolver e manter múltiplos canais de suporte consome tempo, dinheiro e mão de obra. Com nossa plataforma unificada, você reduz custos operacionais, evita retrabalhos e elimina a necessidade de investir em diversas ferramentas separadas.
-                            Além disso, ao otimizar processos e concentrar esforços em um único sistema, sua equipe trabalha com mais eficiência e menos desperdício.
-                            Menos gastos com infraestrutura, mais foco em resultados.
-                        </p>
-                    </article>
+        <section class="full-height d-flex align-items-center py-5 py-md-0" id="register">
+            <div class="container h-100">
+                <h2 class="fs-2 lead text_primary text-center pb-5">Ajude a melhorar os serviço que consomes</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                            <article class="container">
+                                <h3 class="fs-3 lead">Registe-se</h3>
+                                <p class="lead">
+                                    Regista-te para poderes interagir e aumentar o grau proximidade com os prestadores dos serviços que consomes por meio de avaliações ou críticas sugerindo melhorias, ou reportando problemas ocorrentes.
+                                <form action="#">
+                                    <input type="text" name="email" id="email" placeholder="example@gmail.com" class="form-control form-control-lg">
+                                    <button class="btn btn-lg btn-primary mt-2 form-control">Registar-se</button>
+                                </form>
+                            </article>
+                        </div>
+                        <div class="col-6 d-none d-md-flex">
+                            <img src="{{ @asset('./images/46720.jpg') }}" class="img-thumbnail" alt="" srcset="">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 d-none d-md-flex">
-                    <img src="{{ @asset('./images/2148803915.jpg') }}" alt="" class="img-thumbnail">
+            </div>
+        </section>
+
+        <section class="economic">
+            <div class="container">
+                <h2 class="fs-2 lead text_primary text-center py-5 mt-3">Economize +</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <article>
+                            <h3 class="fs-3 lead">Economize Tempo</h3>
+                            <p class="lead">
+                                Ao unificar os canais de suporte, sua empresa reduz o tempo gasto com atendimentos repetitivos, busca de informações e resolução de dúvidas comuns.
+                                Com um ambiente centralizado e padronizado, os clientes encontram respostas com mais rapidez e a equipe de suporte atua de forma mais estratégica, focando no que realmente importa.
+                                O resultado é uma operação mais ágil, produtiva e com menos interrupções — economizando horas valiosas todos os dias.
+                            </p>
+                        </article>
+                        <hr>
+                        <article class="mt-4">
+                            <h3 class="fs-3 lead">Economize Recursos</h3>
+                            <p class="lead">
+                                Desenvolver e manter múltiplos canais de suporte consome tempo, dinheiro e mão de obra. Com nossa plataforma unificada, você reduz custos operacionais, evita retrabalhos e elimina a necessidade de investir em diversas ferramentas separadas.
+                                Além disso, ao otimizar processos e concentrar esforços em um único sistema, sua equipe trabalha com mais eficiência e menos desperdício.
+                                Menos gastos com infraestrutura, mais foco em resultados.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-6 d-none d-md-flex">
+                        <img src="{{ @asset('./images/2148803915.jpg') }}" alt="" class="img-thumbnail">
+                    </div>
                 </div>
             </div>
         </section>
         <footer class="bg-dark text-light py-5" id="register">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mx-auto">
-                        <h5 class="lead fs-5">Registar-se</h5>
-                        <hr>
-                        <small>
-                            <p>Regista-se para poderes interagir com os prestadores dos serviços que consomes por meio de feedbacks
-                            </p>
+            <small>
+                <div class="container">
+                    <div class="row flex-column-reverse flex-md-row text-center text-md-start">
+                        <div class="col-md-4 mt-5 mt-md-0">
+                            <h5 class="lead">Menu de navegação</h5>
+                            <hr class="w-75 mx-auto mx-md-0">
+                            <ul class="ms-auto navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#register-company">Compania</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#register">Registar-se</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 mt-5 mt-md-0">
+                            <h5 class="lead">Contactos</h5>
+                            <hr class="w-75 mx-auto mx-md-0">
+                            <ul class="ms-auto navbar-nav">
+                                <li class="nav-item">
+                                    <i class="bi bi-whatsapp fs-5"></i><span> +244 999-999-999</span>
+                                </li>
+                                <li class="nav-item">
+                                   <i class="bi bi-github fs-5"></i> katakicodes
+                                </li>
+                                <li class="nav-item">
+                                    <i class="bi bi-linkedin fs-5"></i><span> Nelson Dos Santos</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h5 class="lead">Deixe a sua crítica</h5>
+                            <hr class="w-75 mx-auto mx-md-0">
                             <form action="#">
-                                <label for="email" class="label-control">E-mail</label>
-                                <input type="text" name="email" id="email" placeholder="example@gmail.com" class="form-control form-control-sm">
-                                <button class="btn btn-sm btn-primary mt-2 form-control">Registar-se</button>
+                                <input type="text" name="email" id="email" class="form-control my-2" placeholder="example@gmail.com">
+                                <textarea name="content" id="content" class="form-control" placeholder="Escreva aqui a sua critica"></textarea>
+                                <button class="btn btn-primary form-control mt-2">Enviar</button>
                             </form>
-                        </small>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-            <address class="text-center mt-4">
-                Developed by:
-                <a style="text-decoration: none" href="#">Nelson Dos Santos - 2025</a>
-            </address>
+                <p class="text-center mt-5">@Nelson Dos Santos - 2025</p>
+            </small>
         </footer>
     </main>
 </body>

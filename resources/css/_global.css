@@ -29,3 +29,16 @@ img.logo{
 .text_primary{
     color: var(--soft-purple);
 }
+.btn-outline-primary{
+    border-color: var(--soft-purple);
+    color: var(--soft-purple);
+}
+.btn-outline-primary:hover,
+.btn-outline-white:hover{
+    background-color: var(--soft-purple);
+    color: white;
+}
+.btn-outline-white{
+    border-color: white;
+    color: white;
+}
